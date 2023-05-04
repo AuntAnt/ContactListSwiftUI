@@ -11,6 +11,11 @@
 		9B753AF62A039B4B007F6DFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753AF52A039B4B007F6DFF /* ContentView.swift */; };
 		9B753AF82A039B4C007F6DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B753AF72A039B4C007F6DFF /* Assets.xcassets */; };
 		9B753AFB2A039B4C007F6DFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B753AFA2A039B4C007F6DFF /* Preview Assets.xcassets */; };
+		9B753B032A03AD07007F6DFF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753B022A03AD07007F6DFF /* Person.swift */; };
+		9B753B062A03AE20007F6DFF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753B052A03AE20007F6DFF /* DataManager.swift */; };
+		9B753B082A03B3D6007F6DFF /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753B072A03B3D6007F6DFF /* PersonListView.swift */; };
+		9B753B0A2A03B40E007F6DFF /* ExtendedPersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753B092A03B40E007F6DFF /* ExtendedPersonListView.swift */; };
+		9B753B0C2A03C487007F6DFF /* PersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753B0B2A03C487007F6DFF /* PersonInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		9B753AF52A039B4B007F6DFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B753AF72A039B4C007F6DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B753AFA2A039B4C007F6DFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B753B022A03AD07007F6DFF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9B753B052A03AE20007F6DFF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9B753B072A03B3D6007F6DFF /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
+		9B753B092A03B40E007F6DFF /* ExtendedPersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedPersonListView.swift; sourceTree = "<group>"; };
+		9B753B0B2A03C487007F6DFF /* PersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,15 @@
 		9B753AF22A039B4B007F6DFF /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9B753B042A03AE11007F6DFF /* Services */,
+				9B753B012A03ACF8007F6DFF /* Models */,
 				9B753AF32A039B4B007F6DFF /* ContactListSwiftUIApp.swift */,
 				9B753AF52A039B4B007F6DFF /* ContentView.swift */,
 				9B753AF72A039B4C007F6DFF /* Assets.xcassets */,
 				9B753AF92A039B4C007F6DFF /* Preview Content */,
+				9B753B072A03B3D6007F6DFF /* PersonListView.swift */,
+				9B753B0B2A03C487007F6DFF /* PersonInfoView.swift */,
+				9B753B092A03B40E007F6DFF /* ExtendedPersonListView.swift */,
 			);
 			path = ContactListSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +80,22 @@
 				9B753AFA2A039B4C007F6DFF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B753B012A03ACF8007F6DFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B753B022A03AD07007F6DFF /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B753B042A03AE11007F6DFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B753B052A03AE20007F6DFF /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B753B0A2A03B40E007F6DFF /* ExtendedPersonListView.swift in Sources */,
+				9B753B032A03AD07007F6DFF /* Person.swift in Sources */,
+				9B753B062A03AE20007F6DFF /* DataManager.swift in Sources */,
 				9B753AF62A039B4B007F6DFF /* ContentView.swift in Sources */,
 				9B753AF42A039B4B007F6DFF /* ContactListSwiftUIApp.swift in Sources */,
+				9B753B0C2A03C487007F6DFF /* PersonInfoView.swift in Sources */,
+				9B753B082A03B3D6007F6DFF /* PersonListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
